@@ -72,11 +72,11 @@ install_singbox(){
     fi
 
     rm -f /etc/sing-box/config.json
-    wget --no-check-certificate -O /etc/sing-box/config.json https://raw.githubusercontent.com/lanhebe/singbox-shadowtls/main/configs/server-config.json
+    wget --no-check-certificate -O /etc/sing-box/config.json https://github.com/xyxmos/singbox-shadowtls/blob/main/configs/server-config.json
     
     mkdir /root/sing-box
-    wget --no-check-certificate -O /root/sing-box/client-sockshttp.json https://github.com/xyxmos/singbox-shadowtls/main/configs/client-sockshttp.json
-    wget --no-check-certificate -O /root/sing-box/client-tun.json https://github.com/xyxmos/singbox-shadowtls/main/configs/client-tun.json
+    wget --no-check-certificate -O /root/sing-box/client-sockshttp.json https://github.com/xyxmos/singbox-shadowtls/blob/main/configs/client-sockshttp.json
+    wget --no-check-certificate -O /root/sing-box/client-tun.json https://github.com/xyxmos/singbox-shadowtls/blob/main/configs/client-tun.json
     
     wgcfv6status=$(curl -s6m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2) 
     wgcfv4status=$(curl -s4m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
