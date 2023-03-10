@@ -72,11 +72,11 @@ install_singbox(){
     fi
 
     rm -f /etc/sing-box/config.json
-    wget --no-check-certificate -O /etc/sing-box/config.json https://raw.githubusercontent.com/xyxmos/singbox-shadowtls/blob/main/configs/server-config.json
+    wget --no-check-certificate -O /etc/sing-box/config.json https://raw.githubusercontent.com/xyxmos/singbox-shadowtls/main/configs/server-config.json
     
     mkdir /root/sing-box
-    wget --no-check-certificate -O /root/sing-box/client-sockshttp.json https://raw.githubusercontent.com/xyxmos/singbox-shadowtls/blob/main/configs/client-sockshttp.json
-    wget --no-check-certificate -O /root/sing-box/client-tun.json https://raw.githubusercontent.com/xyxmos/singbox-shadowtls/blob/main/configs/client-tun.json
+    wget --no-check-certificate -O /root/sing-box/client-sockshttp.json https://raw.githubusercontent.com/xyxmos/singbox-shadowtls/main/configs/client-sockshttp.json
+    wget --no-check-certificate -O /root/sing-box/client-tun.json https://raw.githubusercontent.com/xyxmos/singbox-shadowtls/main/configs/client-tun.json
     
     wgcfv6status=$(curl -s6m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2) 
     wgcfv4status=$(curl -s4m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
@@ -145,11 +145,11 @@ menu(){
     clear
     echo "#############################################################"
     echo -e "#              ${RED} Sing-box+ShadowTLS  一键管理脚本${PLAIN}            #"
-    echo -e "# ${GREEN}作者${PLAIN}: MisakaNo & Littleyu修改                                  #"
+    echo -e "# ${GREEN}作者${PLAIN}: MisakaNo & onegege修改                                  #"
     echo -e "# ${YELLOW}脚本适用于"Ubuntu" "CentOS" "CentOS" "Fedora"    #"
-    echo -e "# ${GREEN}博客${PLAIN}: https://www.yugogo.xyz                            #"
-    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/lanhebe/singbox-shadowtls               #"
-    echo -e "# ${GREEN}YouTube 频道${PLAIN}: https://www.youtube.com/@yulittle6079        #"
+    echo -e "# ${GREEN}博客${PLAIN}: https://lebo.eu.org                            #"
+    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/xymos/singbox-shadowtls               #"
+    echo -e "# ${GREEN}YouTube 频道${PLAIN}: https://www.youtube.com/@onegege        #"
     echo "#############################################################"
     echo ""
     echo -e " ${GREEN}1.${PLAIN} 安装 Sing-box"
