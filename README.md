@@ -10,7 +10,7 @@ https://#
 
 ## Youtube频道及交流群
 
-[YouTube频道](https://www.youtube.com/channel/UCS0UYwNnawQHXrYeTNMgeOw)
+[YouTube频道](https://www.youtube.com/channel/UComa8081LSNs6G8WrrShYxg)
 
 [Telegram 群组](https://#)
 
