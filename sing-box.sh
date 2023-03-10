@@ -148,7 +148,7 @@ menu(){
     echo -e "# ${GREEN}作者${PLAIN}: MisakaNo & onegege修改                                  #"
     echo -e "# ${YELLOW}脚本适用于"Ubuntu" "CentOS" "CentOS" "Fedora"    #"
     echo -e "# ${GREEN}博客${PLAIN}: https://lebo.eu.org                            #"
-    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/xymos/singbox-shadowtls               #"
+    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/xyxmos/singbox-shadowtls              #"
     echo -e "# ${GREEN}YouTube 频道${PLAIN}: https://www.youtube.com/@onegege        #"
     echo "#############################################################"
     echo ""
